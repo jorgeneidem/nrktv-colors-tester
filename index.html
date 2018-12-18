@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="NRK TV Test forskjellige bakgrunnsfarger regnet ut fra et bilde. Dra og slipp på bildet for å bytte."
+    />
+    <meta
+      property="og:title"
+      content="NRK TV test ut bakgrunnsfarger fra bilde"
+    />
+    <meta property="og:url" content="https://nrktv-colors.netlify.com/" />
+    <meta property="og:image" content="images/nrktv-colors-sharepic.png" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="nb_NO" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@nrktv" />
+    <meta name="twitter:creator" content="@jorgeneidem" />
+    <meta name="twitter:title" content="NRK TV test bakgrunnsfarger" />
+    <meta
+      name="twitter:description"
+      content="NRK TV Test forskjellige bakgrunnsfarger regnet ut fra et bilde. Dra og slipp på bildet for å bytte."
+    />
+    <meta name="twitter:image" content="images/nrktv-colors-sharepic.jpg" />
+    <title>NRK TV Colors From Image</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nrktv-font.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="navigation container">
+        <div class="navigation__logo">
+          <a href="#">
+            <svg
+              style="width:5.8em;height:1.4em"
+              focusable="false"
+              aria-hidden="true"
+            >
+              <use xlink:href="#nrk-logo-nrk-tv" />
+            </svg>
+          </a>
+        </div>
+      </header>
+      <main class="main__container">
+        <div class="image__container__grid">
+          <div id="drop">
+            <img id="hero-image" class="hero__image" src="images/innafor.jpg" />
+            <div class="overlay-info" id="overlay-info">
+              <h3>🤚 Dra og slipp bilder her 🌆</h3>
+              <p>
+                Klikk for å skjule dette <br />
+                <span>(Dette funker best i Chrome)</span>
+              </p>
+            </div>
+            <div id="status"></div>
+          </div>
+          <form
+            class="controls"
+            id="color-selection-controls"
+            name="color-selection"
+          >
+            <label for="old-color">
+              <input
+                type="radio"
+                id="old-color"
+                name="color-selection"
+                checked
+              />
+              Dark blue
+            </label>
+
+            <label for="dominant-color">
+              <input type="radio" id="dominant-color" name="color-selection" />
+              Dominant color
+            </label>
+
+            <label for="average-color">
+              <input type="radio" id="average-color" name="color-selection" />
+              Average color
+            </label>
+
+            <label for="stolen-color-1">
+              <input type="radio" id="stolen-color-1" name="color-selection" />
+              Image color 1
+            </label>
+
+            <label for="stolen-color-2">
+              <input type="radio" id="stolen-color-2" name="color-selection" />
+              Image color 2
+            </label>
+
+            <label for="stolen-color-3">
+              <input type="radio" id="stolen-color-3" name="color-selection" />
+              Image color 3
+            </label>
+
+            <label for="stolen-color-4">
+              <input type="radio" id="stolen-color-4" name="color-selection" />
+              Image color 4
+            </label>
+
+            <label for="stolen-color-5">
+              <input type="radio" id="stolen-color-5" name="color-selection" />
+              Image color 5
+            </label>
+
+            <label for="stolen-color-6">
+              <input type="radio" id="stolen-color-6" name="color-selection" />
+              Image color 6
+            </label>
+
+            <label for="stolen-color-7">
+              <input type="radio" id="stolen-color-7" name="color-selection" />
+              Image color 7
+            </label>
+
+            <label for="stolen-color-8">
+              <input type="radio" id="stolen-color-8" name="color-selection" />
+              Image color 8
+            </label>
+
+            <label for="custom-color">
+              <input
+                type="radio"
+                id="custom-color-radio"
+                name="color-selection"
+              />
+              Custom color
+              <input
+                type="color"
+                id="custom-color-picker"
+                name="color-selection"
+              />
+            </label>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/anime.js"></script>
+    <script src="js/color-thief.min.js"></script>
+    <script src="js/fastaveragecolor.js"></script>
+    <script src="js/colorvalues.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      async
+      src="https://static.nrk.no/core-icons/major/5/core-icons.min.js"
+    ></script>
+  </body>
+</html>

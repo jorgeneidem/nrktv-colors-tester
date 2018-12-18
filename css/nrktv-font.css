@@ -1,0 +1,39 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "NRKpitch";
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "NRKpitch";
+  src: url("../fonts/NRKRobotoPitch-Light.woff") format('woff');
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "NRKpitch";
+  src: url("../fonts/NRKRobotoPitch-Regular.woff") format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "NRKpitch";
+  src: url("../fonts/NRKRobotoPitch-Medium.woff") format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "NRKpitch";
+  src: url("../fonts/NRKRobotoPitch-Bold.woff") format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "NRKpitch";
+  src: url("../fonts/NRKRobotoPitch-Black.woff") format('woff');
+  font-weight: 900;
+}

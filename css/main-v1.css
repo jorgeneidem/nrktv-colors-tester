@@ -1,0 +1,40 @@
+.box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 4px;
+  display: inline-block;
+}
+
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.buttons__wrapper button {
+  padding: 14px 20px;
+  border-radius: 6px;
+  background-color: #444;
+  border: 0;
+  box-shadow: 0px 8px 17px rgba(0,0,0,0.2);
+  color: #f8f8f8;
+  outline: none;
+}
+
+.buttons__wrapper button:hover {
+  color: #fff;
+  box-shadow: 0px 8px 10px rgba(0,0,0,0.2);
+}
+
+.buttons__wrapper button:active,
+.buttons__wrapper button:visited {
+  background-color: #1f2f2f;
+}
